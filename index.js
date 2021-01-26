@@ -94,11 +94,28 @@ const evenNumberOfArray = function(array) {
 // 3.4 Вывести индексы нулевых элементов (элемент равен нулю)
 
 const indexisOfZeroElement = function (array) {
-  
+  const result = [];
+  for(let i = 0; i < array.length; i++) {
+    if(array[i] === 0) {
+      result.push(i)
+    }
+  }
+  return result;
 }
+
+const okayLetDoIt = [1,5,7,10,0,0,0,15];
 
 // 3.5 Подсчитать количество нулевых элементов
 
+const summOfZeroElements = function (array) {
+  let result = 0;
+  for(let i = 0; i < array.length; i++) {
+    if(array[i] === 0) {
+      result++
+    }
+  }
+  return result;
+}
 
 
 
